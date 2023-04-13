@@ -1,6 +1,6 @@
-@extends("layouts.app")
+{{-- @extends("layouts.app") --}}
 
-@section('content')
+{{-- @section('content') --}}
 Products
 
 <div class="card-body">
@@ -30,4 +30,4 @@ Products
         </tbody>
     </table>
 </div>
-@endsection
+{{-- @endsection --}}

@@ -1,6 +1,6 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
-@section('content')
+@section('content') --}}
 
 {{ $item->product->name }} - {{ $item->warehouse->name }}
 
@@ -22,4 +22,4 @@
     </div>
 </div>
 
-@endsection
+{{-- @endsection --}}

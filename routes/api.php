@@ -22,22 +22,22 @@ use App\Http\Controllers\InventoryController;
 // });
 
 // Products
-Route::get('products', 'ProductController@index');
-Route::post('products', 'ProductController@store');
-Route::get('products/{id}', 'ProductController@show');
-Route::put('products/{id}', 'ProductController@update');
-Route::delete('products/{id}', 'ProductController@destroy');
+Route::get('products', [ProductController::class, 'index']);
+Route::post('products', [ProductController::class, 'store']);
+Route::get('products/{id}', [ProductController::class, 'show']);
+Route::put('products/{id}', [ProductController::class, 'update']);
+Route::delete('products/{id}', [ProductController::class, 'delete']);
 
 // Warehouse
-Route::get('warehouses', 'WarehouseController@index');
-Route::post('warehouses', 'WarehouseController@store');
-Route::get('warehouses/{id}', 'WarehouseController@show');
-Route::put('warehouses/{id}', 'WarehouseController@update');
-Route::delete('warehouses/{id}', 'WarehouseController@destroy');
+Route::get('warehouses', [WarehouseController::class, 'index']);
+Route::post('warehouses', [WarehouseController::class, 'store']);
+Route::get('warehouses/{id}', [WarehouseController::class, 'show']);
+Route::put('warehouses/{id}', [WarehouseController::class, 'update']);
+Route::delete('warehouses/{id}', [WarehouseController::class, 'delete']);
 
 // Inventory
-Route::get('inventory', 'InventoryController@index');
-Route::post('inventory', 'InventoryController@store');
-Route::get('inventory/{id}', 'InventoryController@show');
-Route::put('inventory/{id}', 'InventoryController@update');
-Route::delete('inventory/{id}', 'InventoryController@destroy');
+Route::get('inventory', [InventoryController::class, 'index']);
+Route::post('inventory', [InventoryController::class, 'store']);
+Route::get('inventory/{id}', [InventoryController::class, 'show']);
+Route::put('inventory/{id}', [InventoryController::class, 'update']);
+Route::delete('inventory/{id}', [InventoryController::class, 'delete']);

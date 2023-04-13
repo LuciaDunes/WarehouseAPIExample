@@ -1,6 +1,6 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
-@section('content')
+@section('content') --}}
 Inventori
 
 <div class="card-body">
@@ -42,4 +42,4 @@ Inventori
     </div>
 </div>
 
-@endsection
+{{-- @endsection --}}
